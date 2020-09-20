@@ -28,33 +28,152 @@
         </span></a>
         </div>
     </nav>
-    <!-- Nav tabs -->
-  <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top: 30px; margin-left: 50px;">
-    <li class="nav-item" role="presentation">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">進行中</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">已完成</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">其他</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">全部</a>
-    </li>
-    <form class="form-inline">
-        <div class="dropdown">
-          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 10px;">
-            購買/出售訂單
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">購買/出售訂單</button>
-            <button class="dropdown-item" type="button">兌換訂單</button>
+
+
+    <div class="d-flex bd-highlight mb-3">
+      <div class="mr-auto p-2 bd-highlight">
+        <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top: 30px; margin-left: 50px;">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">進行中</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">已完成</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">其他</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">全部</a>
+          </li>
+      
+          
+      
+        </ul>
+      </div>
+     
+      <div class="p-2 bd-highlight" >
+       
+          <div class="dropdown"style="margin-top: 35px; ">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              購買/出售訂單
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">購買/出售訂單</button>
+              <button class="dropdown-item" type="button">兌換訂單</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="p-2 bd-highlight" style="margin-top: 35px;" >
+        <button type="button" class="btn btn-light  dropdown-toggle "  data-toggle="modal" data-target="#exampleModal" style="line-height:10px; height: 32px; ">
+          訂單日期/編號/幣種
+        </button>
+
+      </div>
+    </div>
+    
+    <!-- 彈跳視窗設定 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  " style="width: 700px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+          </div>
+          <div class="modal-body" >
+
+            <div class="p-2 bd-highlight" >
+
+             <div class="form-group">
+               <label for="recipient-name" class="col-form-label">訂單編號</label>
+               <input type="text" class="form-control" id="recipient-name">
+             </div>
+            </div> 
+
+            <div class="p-2 bd-highlight">
+              
+              <div class="form-group ">
+                <label for="recipient-name" class="col-form-label">幣種</label>
+                <select id="inputState" class="form-control">
+                  <option selected>選擇幣種</option>
+                  <option>全部國家</option>
+                  <option>台灣</option>
+                  <option>中國</option>
+                  <option>新加玻</option>
+                </select>
+                
+                
+              </div>
+              
+
+            </div>
+            <div class="p-2 bd-highlight">
+              
+              <div class="form-group ">
+                <label for="recipient-name" class="col-form-label">訂單類型</label>
+                <select id="inputState" class="form-control">
+                  <option selected>訂單類型</option>
+                  <option>全部國家</option>
+                  <option>台灣</option>
+                  <option>中國</option>
+                  <option>新加玻</option>
+                </select>
+                
+                
+              </div>
+              
+
+            </div>
+            <div class="p-2 bd-highlight">
+              
+              <div class="form-group ">
+                <label for="recipient-name" class="col-form-label">交易類型</label>
+                <select id="inputState" class="form-control">
+                  <option selected>交易類型</option>
+                  <option>全部國家</option>
+                  <option>台灣</option>
+                  <option>中國</option>
+                  <option>新加玻</option>
+                </select>
+                
+                
+              </div>
+              
+
+            </div>
+            <div class="p-2 bd-highlight">
+              
+              <div class="form-group ">
+                <label for="recipient-name" class="col-form-label">法幣幣種</label>
+                <select id="inputState" class="form-control">
+                  <option selected>法幣幣種</option>
+                  <option>全部國家</option>
+                  <option>台灣</option>
+                  <option>中國</option>
+                  <option>新加玻</option>
+                </select>
+                
+                
+              </div>
+              
+
+            </div>
+            
+           
     
           </div>
+
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">搜索</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            
+          </div>
         </div>
-      </form>
-  </ul>
+      </div>
+    </div>  
+    <!----彈跳視窗設定結束-----> 
+  
   
   <!-- Tab panes -->
   <div class="tab-content" style="margin-top: 30px; margin-left: 50px;">
