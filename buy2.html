@@ -66,7 +66,154 @@
 
         <!-----一鍵買賣---->
         
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" >
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-2">
+                
+              </div>
+              <div class="col-md-auto">
+
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="width: 200px; text-align: center; ">購買</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="width: 200px; text-align: center;">出售</a>
+                  </li>
+                  
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                  <!-------購買畫面開始------>
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <form>
+                      <div class="form-group" style="margin-top: 20px; margin-left: 20px;">
+                        <label for="exampleFormControlInput1">支付</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-append">
+                            <select id="inputState" class="form-control">
+                              
+                              <option>USD</option>
+                              <option>CNY</option>
+                              <option>HKD</option>
+                              
+                            </select>
+                          </div>
+                        </div>
+                        <div class="input-group" style="margin-top:20px ; margin-bottom: 20px;">
+                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+
+
+                        </div>
+                        
+                        <label for="exampleFormControlInput1">獲得</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-append">
+                            <select id="inputState" class="form-control">
+                            
+                              <option>BTC</option>
+                              <option>USDT</option>
+                              <option>ETH</option>
+                              
+                            </select>
+                          </div>
+                        </div>
+                        <label for="exampleFormControlInput1" style="margin-top:20px ;">支付方式</label>
+
+                        <div class="input-group" style="margin-top:20px ; margin-bottom: 20px;">
+                          <button type="button " class="btn btn-success btn-lg" style="width: 100%;">購買</button>
+
+                        </div>
+
+
+
+
+
+
+                      </div>
+
+                    </form>
+
+                  </div>
+                  <!-------購買畫面結束-------->
+                  <!-------出售畫面開始-------->
+
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <form>
+                      <div class="form-group" style="margin-top: 20px; margin-left: 20px;">
+                        <label for="exampleFormControlInput1">出售</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-append">
+                            <select id="inputState" class="form-control">
+                              <option>BTC</option>
+                              <option>USDT</option>
+                              <option>ETH</option>
+                              
+                              
+                              
+                            </select>
+                          </div>
+                        </div>
+                        <div class="input-group" style="margin-top:20px ; margin-bottom: 20px;">
+                          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                          </svg>
+
+
+                        </div>
+                        
+                        <label for="exampleFormControlInput1">獲得</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-append">
+                            <select id="inputState" class="form-control">
+                            
+                              <option>USD</option>
+                              <option>CNY</option>
+                              <option>HKD</option>
+                              
+                            </select>
+                          </div>
+                        </div>
+                        <label for="exampleFormControlInput1" style="margin-top:20px ;">支付方式</label>
+
+                        <div class="input-group" style="margin-top:20px ; margin-bottom: 20px;">
+                          <button type="button " class="btn btn-success btn-lg" style="width: 100%;">出售</button>
+
+                        </div>
+
+
+
+
+
+
+                      </div>
+
+                    </form>
+
+                  </div>
+                  <!-------出售畫面結束-------->
+
+                  
+                </div>
+                
+              </div>
+
+              <div class="col col-lg-2">
+                
+              </div>
+            </div>
+            
+          </div>
+          
 
         </div>
         <!-----自選交易---->
